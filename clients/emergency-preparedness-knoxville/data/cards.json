@@ -1,0 +1,114 @@
+[
+  {
+    "id": "start",
+    "screen": "start",
+    "icon": "fa-solid fa-route",
+    "title": {
+      "en": "Start Here",
+      "es": "Comenzar"
+    },
+    "description": {
+      "en": "Understand the shortest path: prepare your household, know neighbors, create the plan, and revisit it yearly.",
+      "es": "Vea el camino básico: preparar el hogar, conocer vecinos, crear el plan y revisarlo cada año."
+    },
+    "emoji": "🧭"
+  },
+  {
+    "id": "household",
+    "screen": "household",
+    "icon": "fa-solid fa-house-medical",
+    "title": {
+      "en": "Household Preparedness",
+      "es": "Preparación del hogar"
+    },
+    "description": {
+      "en": "Five personal readiness steps before helping the neighborhood.",
+      "es": "Cinco pasos de preparación personal antes de ayudar al vecindario."
+    },
+    "emoji": "🏠"
+  },
+  {
+    "id": "kit",
+    "screen": "kit",
+    "icon": "fa-solid fa-list-check",
+    "title": {
+      "en": "Household Ready Kit",
+      "es": "Kit listo del hogar"
+    },
+    "description": {
+      "en": "A persistent 72-hour supply checklist based on the guide.",
+      "es": "Lista persistente de suministros para 72 horas basada en la guía."
+    },
+    "emoji": "✅"
+  },
+  {
+    "id": "plan",
+    "screen": "plan",
+    "icon": "fa-solid fa-people-roof",
+    "title": {
+      "en": "Build Neighborhood Plan",
+      "es": "Crear plan vecinal"
+    },
+    "description": {
+      "en": "Record gathering sites, care sites, communication methods, skills, equipment, and team backups.",
+      "es": "Registre sitios, comunicación, habilidades, equipo y suplentes."
+    },
+    "emoji": "👥"
+  },
+  {
+    "id": "quick",
+    "screen": "quick",
+    "icon": "fa-solid fa-bolt",
+    "title": {
+      "en": "Emergency Mode",
+      "es": "Modo de emergencia"
+    },
+    "description": {
+      "en": "Seven quick implementation steps for when responders cannot reach the neighborhood right away.",
+      "es": "Siete pasos rápidos cuando los servicios de emergencia no llegan de inmediato."
+    },
+    "emoji": "⚡"
+  },
+  {
+    "id": "roles",
+    "screen": "roles",
+    "icon": "fa-solid fa-user-shield",
+    "title": {
+      "en": "Team Roles",
+      "es": "Funciones del equipo"
+    },
+    "description": {
+      "en": "Coordinator, liaison, radio relay, and scout team job descriptions.",
+      "es": "Funciones de coordinador, enlace, radio y exploradores."
+    },
+    "emoji": "🛡️"
+  },
+  {
+    "id": "hazards",
+    "screen": "hazards",
+    "icon": "fa-solid fa-triangle-exclamation",
+    "title": {
+      "en": "Local Hazards",
+      "es": "Riesgos locales"
+    },
+    "description": {
+      "en": "Weather, illness, outages, transportation incidents, terrorism, and hazardous materials.",
+      "es": "Clima, enfermedades, apagones, incidentes de transporte, terrorismo y materiales peligrosos."
+    },
+    "emoji": "⚠️"
+  },
+  {
+    "id": "resources",
+    "screen": "resources",
+    "icon": "fa-solid fa-phone-volume",
+    "title": {
+      "en": "Phone Numbers & Resources",
+      "es": "Teléfonos y recursos"
+    },
+    "description": {
+      "en": "Search important phone numbers, agencies, and preparedness links.",
+      "es": "Busque teléfonos importantes, agencias y enlaces de preparación."
+    },
+    "emoji": "☎️"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Police / Fire / Medical Emergency",
+    "category": "Emergency",
+    "phone": "911",
+    "href": "tel:911",
+    "website": "",
+    "description": {
+      "en": "Call 911 for immediate life-safety emergencies that need police, fire, or medical response now.",
+      "es": "Llame al 911 para emergencias inmediatas con peligro de vida que requieren policía, bomberos o atención médica ahora."
+    },
+    "icon": "fa-solid fa-triangle-exclamation"
+  },
+  {
+    "name": "City of Knoxville Information",
+    "category": "Government",
+    "phone": "311",
+    "href": "tel:311",
+    "website": "",
+    "description": {
+      "en": "Call 311 for City of Knoxville information and non-emergency city service questions.",
+      "es": "Llame al 311 para información de la Ciudad de Knoxville y preguntas no urgentes sobre servicios municipales."
+    },
+    "icon": "fa-solid fa-phone-volume"
+  },
+  {
+    "name": "Tennessee 211",
+    "category": "Community help",
+    "phone": "211",
+    "href": "tel:211",
+    "website": "",
+    "description": {
+      "en": "Call 211 to find community services, basic-needs help, and referrals after a disruption or disaster.",
+      "es": "Llame al 211 para encontrar servicios comunitarios, ayuda con necesidades básicas y referencias después de una interrupción o desastre."
+    },
+    "icon": "fa-solid fa-phone-volume"
+  },
+  {
+    "name": "Knoxville Police Department Non-Emergency Line",
+    "category": "Public safety",
+    "phone": "865-215-4010",
+    "href": "tel:8652154010",
+    "website": "",
+    "description": {
+      "en": "Use this number for police situations that are not immediate life-threatening emergencies.",
+      "es": "Use este número para situaciones policiales que no sean emergencias inmediatas con peligro de vida."
+    },
+    "icon": "fa-solid fa-triangle-exclamation"
+  },
+  {
+    "name": "Knox County Sheriff’s Office",
+    "category": "Public safety",
+    "phone": "865-215-2243",
+    "href": "tel:8652152243",
+    "website": "",
+    "description": {
+      "en": "Contact the sheriff’s office for county public-safety needs that are not immediate life-threatening emergencies.",
+      "es": "Comuníquese con la oficina del sheriff para necesidades de seguridad pública del condado que no sean emergencias inmediatas con peligro de vida."
+    },
+    "icon": "fa-solid fa-shield-halved"
+  },
+  {
+    "name": "UT Police Department",
+    "category": "Public safety",
+    "phone": "865-974-3114",
+    "href": "tel:8659743114",
+    "website": "",
+    "description": {
+      "en": "Use this number for University of Tennessee campus police assistance that is not an immediate life-safety emergency.",
+      "es": "Use este número para asistencia de la policía del campus de la Universidad de Tennessee cuando no sea una emergencia inmediata con peligro de vida."
+    },
+    "icon": "fa-solid fa-shield-halved"
+  },
+  {
+    "name": "Knoxville Fire Department",
+    "category": "Fire",
+    "phone": "865-595-4480",
+    "href": "tel:8655954480",
+    "website": "https://www.knoxvilletn.gov/government/city_departments_offices/fire_department",
+    "description": {
+      "en": "Contact for Knoxville Fire Department information. Call 911 instead for an active fire or immediate emergency.",
+      "es": "Comuníquese para información del Departamento de Bomberos de Knoxville. Llame al 911 si hay un incendio activo o una emergencia inmediata."
+    },
+    "icon": "fa-solid fa-fire-extinguisher"
+  },
+  {
+    "name": "Knox County Rescue Squad",
+    "category": "Rescue",
+    "phone": "865-546-4852",
+    "href": "tel:8655464852",
+    "website": "",
+    "description": {
+      "en": "Contact for rescue-squad information and non-immediate rescue-related questions. Call 911 for urgent rescue needs.",
+      "es": "Comuníquese para información del escuadrón de rescate y preguntas no inmediatas. Llame al 911 para necesidades urgentes de rescate."
+    },
+    "icon": "fa-solid fa-fire-extinguisher"
+  },
+  {
+    "name": "Knoxville Utility Board",
+    "category": "Utilities",
+    "phone": "865-524-2911",
+    "href": "tel:8655242911",
+    "website": "",
+    "description": {
+      "en": "Use for utility issues such as electric, gas, water, or wastewater service questions. Stay away from downed power lines and call emergency services when there is immediate danger.",
+      "es": "Use este recurso para problemas de servicios públicos como electricidad, gas, agua o aguas residuales. Manténgase alejado de cables caídos y llame a emergencias si hay peligro inmediato."
+    },
+    "icon": "fa-solid fa-plug-circle-bolt"
+  },
+  {
+    "name": "Knox County Health Department",
+    "category": "Health",
+    "phone": "865-215-5000",
+    "href": "tel:8652155000",
+    "website": "http://www.knoxcounty.org/health/",
+    "description": {
+      "en": "Use for public-health information, illness concerns, and health-department services after an emergency or community disruption.",
+      "es": "Use este recurso para información de salud pública, inquietudes sobre enfermedades y servicios del departamento de salud después de una emergencia o interrupción comunitaria."
+    },
+    "icon": "fa-solid fa-notes-medical"
+  },
+  {
+    "name": "Knoxville-Knox County Emergency Management Agency",
+    "category": "Emergency management",
+    "phone": "865-215-1166",
+    "href": "tel:8652151166",
+    "website": "https://www.knoxvilletn.gov/government/city_departments_offices/knoxville_knox_co_emergency_management_agency",
+    "description": {
+      "en": "Use for emergency preparedness, alerts, planning, disaster coordination, and neighborhood plan review questions.",
+      "es": "Use este recurso para preparación ante emergencias, alertas, planificación, coordinación de desastres y preguntas sobre revisión del plan vecinal."
+    },
+    "icon": "fa-solid fa-triangle-exclamation"
+  },
+  {
+    "name": "Tennessee Emergency Management Agency",
+    "category": "Emergency management",
+    "phone": "615-741-0001",
+    "href": "tel:6157410001",
+    "website": "http://www.tnema.org/",
+    "description": {
+      "en": "State emergency-management resource for preparedness information, statewide disaster coordination, and recovery guidance.",
+      "es": "Recurso estatal de manejo de emergencias para información de preparación, coordinación de desastres a nivel estatal y orientación de recuperación."
+    },
+    "icon": "fa-solid fa-triangle-exclamation"
+  },
+  {
+    "name": "American Red Cross of East Tennessee",
+    "category": "Preparedness",
+    "phone": "",
+    "href": "",
+    "website": "http://www.redcross.org/tn/knoxville",
+    "description": {
+      "en": "Use for disaster preparedness, shelter and recovery information, and Red Cross support after displacement or loss of basic needs.",
+      "es": "Use este recurso para preparación ante desastres, información sobre refugios y recuperación, y apoyo de la Cruz Roja después de desplazamiento o pérdida de necesidades básicas."
+    },
+    "icon": "fa-solid fa-hand-holding-heart"
+  },
+  {
+    "name": "CDC Healthy Pets Emergency Preparedness",
+    "category": "Pets",
+    "phone": "",
+    "href": "",
+    "website": "https://www.cdc.gov/healthy-pets/emergency-preparedness/index.html",
+    "description": {
+      "en": "Use for guidance on keeping pets safe, healthy, and ready during an emergency or evacuation.",
+      "es": "Use este recurso para orientación sobre cómo mantener a las mascotas seguras, sanas y preparadas durante una emergencia o evacuación."
+    },
+    "icon": "fa-solid fa-triangle-exclamation"
+  },
+  {
+    "name": "disABILITY Resource Center",
+    "category": "Disability resources",
+    "phone": "",
+    "href": "",
+    "website": "http://www.drctn.org/",
+    "description": {
+      "en": "Use for disability-related support, independent-living resources, and planning for access and functional needs.",
+      "es": "Use este recurso para apoyo relacionado con discapacidad, recursos de vida independiente y planificación de necesidades funcionales y de acceso."
+    },
+    "icon": "fa-solid fa-link"
+  },
+  {
+    "name": "East Tennessee VOAD",
+    "category": "Disaster volunteers",
+    "phone": "",
+    "href": "",
+    "website": "https://www.tnvoad.org/east-tn-voad/",
+    "description": {
+      "en": "Use for information about voluntary organizations active in disaster response, recovery, and unmet-needs support.",
+      "es": "Use este recurso para información sobre organizaciones voluntarias activas en respuesta a desastres, recuperación y apoyo para necesidades no cubiertas."
+    },
+    "icon": "fa-solid fa-hand-holding-heart"
+  },
+  {
+    "name": "FEMA Emergency Alert System",
+    "category": "Alerts",
+    "phone": "",
+    "href": "",
+    "website": "https://www.fema.gov/emergency-alert-system",
+    "description": {
+      "en": "Use to understand the national public warning system and how emergency alerts may be delivered.",
+      "es": "Use este recurso para entender el sistema nacional de alertas públicas y cómo se pueden emitir alertas de emergencia."
+    },
+    "icon": "fa-solid fa-triangle-exclamation"
+  },
+  {
+    "name": "Ready.gov",
+    "category": "Preparedness",
+    "phone": "",
+    "href": "",
+    "website": "https://www.ready.gov/",
+    "description": {
+      "en": "Use for plain-language preparedness guidance, emergency kit planning, family plans, and hazard-specific tips.",
+      "es": "Use este recurso para orientación sencilla de preparación, planificación de kits de emergencia, planes familiares y consejos por tipo de riesgo."
+    },
+    "icon": "fa-solid fa-link"
+  },
+  {
+    "name": "Ready.gov Prepare Your Pets",
+    "category": "Pets",
+    "phone": "",
+    "href": "",
+    "website": "https://www.ready.gov/pets",
+    "description": {
+      "en": "Use for pet emergency kit guidance, evacuation planning, and pet sheltering considerations.",
+      "es": "Use este recurso para guías sobre kits de emergencia para mascotas, planificación de evacuación y consideraciones de refugio para mascotas."
+    },
+    "icon": "fa-solid fa-link"
+  },
+  {
+    "name": "Prepare UTK Emergency Management",
+    "category": "Campus preparedness",
+    "phone": "",
+    "href": "",
+    "website": "https://prepare.utk.edu/be-ready",
+    "description": {
+      "en": "Use for University of Tennessee emergency-preparedness information and campus readiness guidance.",
+      "es": "Use este recurso para información de preparación ante emergencias de la Universidad de Tennessee y orientación de preparación del campus."
+    },
+    "icon": "fa-solid fa-triangle-exclamation"
+  },
+  {
+    "name": "Office of Neighborhood Empowerment",
+    "category": "Neighborhoods",
+    "phone": "",
+    "href": "",
+    "website": "https://www.knoxvilletn.gov/government/city_departments_offices/neighborhoods",
+    "description": {
+      "en": "Use for neighborhood organizing support, neighborhood maps, meetings, and guidance on building a preparedness network.",
+      "es": "Use este recurso para apoyo de organización vecinal, mapas del vecindario, reuniones y orientación para crear una red de preparación."
+    },
+    "icon": "fa-solid fa-link"
+  }
+]

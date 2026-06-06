@@ -1,0 +1,87 @@
+{
+  "emergency": {
+    "title": {
+      "en": "Implement the Plan",
+      "es": "Implementar el plan"
+    },
+    "steps": [
+      {
+        "number": 1,
+        "title": {
+          "en": "Take care of yourself and loved ones first",
+          "es": "Cuídese usted y cuide primero a sus seres queridos"
+        },
+        "body": {
+          "en": "Secure your home and make sure your household is safe before reporting to help others.",
+          "es": "Asegure su hogar y confirme que su familia esté a salvo antes de presentarse para ayudar a otros."
+        }
+      },
+      {
+        "number": 2,
+        "title": {
+          "en": "Post HELP or OK sign",
+          "es": "Coloque un letrero de AYUDA u OK"
+        },
+        "body": {
+          "en": "Place a HELP or OK sign in the front window so neighborhood teams can quickly understand your household status.",
+          "es": "Coloque un letrero de AYUDA u OK en la ventana principal para que los equipos del vecindario entiendan rápidamente la situación de su hogar."
+        }
+      },
+      {
+        "number": 3,
+        "title": {
+          "en": "Report to the assigned site if able",
+          "es": "Preséntese en el sitio asignado si puede hacerlo"
+        },
+        "body": {
+          "en": "Go to the Neighborhood Gathering Site or Care Site if it is safe and you are able.",
+          "es": "Vaya al sitio de reunión del vecindario o al sitio de atención si es seguro y usted puede hacerlo."
+        }
+      },
+      {
+        "number": 4,
+        "title": {
+          "en": "Coordinator assesses and assigns",
+          "es": "El coordinador evalúa y asigna tareas"
+        },
+        "body": {
+          "en": "The coordinator checks the scale of the emergency, confirms key personnel, and the liaison starts communicating with emergency services.",
+          "es": "El coordinador evalúa el alcance de la emergencia, confirma al personal clave y el enlace empieza a comunicarse con los servicios de emergencia."
+        }
+      },
+      {
+        "number": 5,
+        "title": {
+          "en": "Deploy known scout teams",
+          "es": "Enviar equipos de revisión conocidos"
+        },
+        "body": {
+          "en": "Door-to-door scout teams check HELP signs, no-sign homes, elderly neighbors, and priority needs, then report back.",
+          "es": "Los equipos revisan casa por casa los letreros de AYUDA, las viviendas sin letrero, los vecinos mayores y las necesidades prioritarias; luego informan al coordinador."
+        }
+      },
+      {
+        "number": 6,
+        "title": {
+          "en": "Exchange information and decide next tasks",
+          "es": "Intercambiar información y decidir las siguientes tareas"
+        },
+        "body": {
+          "en": "Share updates and make safe decisions such as clearing trees not touching power lines or roping off hazards.",
+          "es": "Compartan actualizaciones y tomen decisiones seguras, como retirar árboles que no estén tocando cables eléctricos o acordonar peligros."
+        }
+      },
+      {
+        "number": 7,
+        "title": {
+          "en": "Keep checking and updating",
+          "es": "Seguir revisando y actualizando"
+        },
+        "body": {
+          "en": "Continue checking homes, updating the status board, helping neighbors, and communicating with emergency services.",
+          "es": "Sigan revisando viviendas, actualizando el tablero de estado, ayudando a vecinos y comunicándose con los servicios de emergencia."
+        }
+      }
+    ]
+  }
+}

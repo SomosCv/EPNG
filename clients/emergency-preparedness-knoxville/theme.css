@@ -1,0 +1,12 @@
+:root{
+  --brand-primary:#e63946;
+  --brand-primary-dark:#b41f2b;
+  --brand-secondary:#1d3557;
+  --brand-accent:#f4a261;
+  --brand-safe:#2a9d8f;
+  --brand-warning:#f4a261;
+  --brand-danger:#d00000;
+  --brand-bg-image:url("assets/images/background.jpg");
+  --radius-xl:28px;
+  --radius-lg:20px;
+}

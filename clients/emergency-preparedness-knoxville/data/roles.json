@@ -1,0 +1,48 @@
+{
+  "roles": [
+    {
+      "title": {
+        "en": "Neighborhood Emergency Coordinator",
+        "es": "Neighborhood Emergency Coordinator"
+      },
+      "body": {
+        "en": "Leads implementation, receives reports, coordinates communications, and supervises the overall effort.",
+        "es": "Leads implementation, receives reports, coordinates communications, and supervises the overall effort."
+      },
+      "icon": "fa-solid fa-user-shield"
+    },
+    {
+      "title": {
+        "en": "Neighborhood Liaison",
+        "es": "Neighborhood Liaison"
+      },
+      "body": {
+        "en": "Single point person for communicating damages, urgent needs, and updates with Emergency Services.",
+        "es": "Single point person for communicating damages, urgent needs, and updates with Emergency Services."
+      },
+      "icon": "fa-solid fa-tower-broadcast"
+    },
+    {
+      "title": {
+        "en": "Radio Relay",
+        "es": "Radio Relay"
+      },
+      "body": {
+        "en": "Monitors the Emergency Alert System or NOAA Weather Radio and relays pertinent information to the group.",
+        "es": "Monitors the Emergency Alert System or NOAA Weather Radio and relays pertinent information to the group."
+      },
+      "icon": "fa-solid fa-radio"
+    },
+    {
+      "title": {
+        "en": "Neighborhood Scout Team",
+        "es": "Neighborhood Scout Team"
+      },
+      "body": {
+        "en": "Checks households with HELP signs or no signs, checks elderly or special-needs neighbors, assists if appropriate, and reports back to the gathering site.",
+        "es": "Checks households with HELP signs or no signs, checks elderly or special-needs neighbors, assists if appropriate, and reports back to the gathering site."
+      },
+      "icon": "fa-solid fa-person-walking"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "start": {
+    "title": {
+      "en": "Knowing Your Neighbors Can Save Your Life",
+      "es": "Conocer a sus vecinos puede salvar vidas"
+    },
+    "summary": {
+      "en": "This guide helps a neighborhood respond more quickly and responsibly during a community-wide disaster, especially while waiting for first responders.",
+      "es": "Esta guía ayuda a un vecindario a responder con más rapidez y responsabilidad durante un desastre comunitario, especialmente mientras esperan a los primeros respondedores."
+    },
+    "items": [
+      {
+        "icon": "fa-solid fa-house",
+        "title": {
+          "en": "Prepare households first",
+          "es": "Prepare primero los hogares"
+        },
+        "body": {
+          "en": "A neighborhood cannot be prepared unless individual households are prepared. Start with family contacts, utility shutoffs, and a 72-hour kit.",
+          "es": "El vecindario no puede estar preparado si los hogares no lo están. Empiece con contactos, servicios públicos y un kit de 72 horas."
+        },
+        "emoji": "🏠"
+      },
+      {
+        "icon": "fa-solid fa-handshake-angle",
+        "title": {
+          "en": "Build trust before disaster",
+          "es": "Cree confianza antes del desastre"
+        },
+        "body": {
+          "en": "Host social events, keep groups manageable, and work in target areas of about 10 to 40 homes.",
+          "es": "Organice eventos, mantenga grupos manejables y trabaje en áreas de 10 a 40 hogares."
+        },
+        "emoji": "🤝"
+      },
+      {
+        "icon": "fa-solid fa-map-location-dot",
+        "title": {
+          "en": "Create a written plan",
+          "es": "Cree un plan escrito"
+        },
+        "body": {
+          "en": "Map the neighborhood, identify hazards, choose gathering and care sites, and name volunteers with backups.",
+          "es": "Mapee el vecindario, identifique riesgos, elija sitios y nombre voluntarios con suplentes."
+        },
+        "emoji": "🗺️"
+      },
+      {
+        "icon": "fa-solid fa-calendar-check",
+        "title": {
+          "en": "Review the plan yearly",
+          "es": "Revise el plan cada año"
+        },
+        "body": {
+          "en": "Revisit the plan at least once each year and make sure volunteers are still in place for each role.",
+          "es": "Revise el plan al menos una vez al año y confirme que los voluntarios siguen disponibles."
+        },
+        "emoji": "📅"
+      }
+    ]
+  },
+  "household": {
+    "title": {
+      "en": "Prepare Your Household",
+      "es": "Prepare su hogar"
+    },
+    "summary": {
+      "en": "Help others by first being prepared to help yourself. These are the household-level actions from the guide.",
+      "es": "Ayude a otros preparándose primero usted mismo. Estas son las acciones del hogar de la guía."
+    },
+    "items": [
+      {
+        "icon": "fa-solid fa-box-open",
+        "title": {
+          "en": "Create a Household Ready Kit",
+          "es": "Cree un kit listo"
+        },
+        "body": {
+          "en": "Store 72-hour essentials such as water, food, radio, flashlight, medications, documents, first aid, hygiene items, pet items, and warm clothing.",
+          "es": "Guarde artículos esenciales para 72 horas como agua, comida, radio, linterna, medicamentos, documentos, primeros auxilios, higiene, mascotas y ropa."
+        },
+        "emoji": "📦"
+      },
+      {
+        "icon": "fa-solid fa-address-book",
+        "title": {
+          "en": "Store emergency contacts",
+          "es": "Guarde contactos de emergencia"
+        },
+        "body": {
+          "en": "Assemble family, work, school, cell, and local emergency-management numbers. Keep a copy in the kit.",
+          "es": "Reúna números de familia, trabajo, escuela, celulares y agencias locales. Guarde una copia en el kit."
+        },
+        "emoji": "📒"
+      },
+      {
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "title": {
+          "en": "Learn utility shutoffs",
+          "es": "Aprenda a cortar servicios"
+        },
+        "body": {
+          "en": "Know how to shut off utilities if they become hazardous. Use professionals to turn gas back on.",
+          "es": "Sepa cómo cerrar servicios si son peligrosos. Use profesionales para volver a abrir el gas."
+        },
+        "emoji": "🛠️"
+      },
+      {
+        "icon": "fa-solid fa-children",
+        "title": {
+          "en": "Review the family plan",
+          "es": "Revise el plan familiar"
+        },
+        "body": {
+          "en": "Review emergency plans routinely, especially with children.",
+          "es": "Revise los planes de emergencia con regularidad, especialmente con niños."
+        },
+        "emoji": "👨‍👩‍👧‍👦"
+      },
+      {
+        "icon": "fa-solid fa-kit-medical",
+        "title": {
+          "en": "Consider training",
+          "es": "Considere capacitación"
+        },
+        "body": {
+          "en": "CPR, Stop the Bleed, CERT, and fire safety training can strengthen neighborhood readiness.",
+          "es": "RCP, Stop the Bleed, CERT y seguridad contra incendios fortalecen la preparación."
+        },
+        "emoji": "🩹"
+      }
+    ]
+  },
+  "hazards": {
+    "title": {
+      "en": "Potential Emergencies in Knoxville",
+      "es": "Posibles emergencias en Knoxville"
+    },
+    "summary": {
+      "en": "Use this as a planning prompt. Your neighborhood should identify likely hazards and decide what needs would follow.",
+      "es": "Use esto como guía de planificación. El vecindario debe identificar riesgos probables y necesidades posteriores."
+    },
+    "groups": [
+      {
+        "title": {
+          "en": "Severe weather",
+          "es": "Clima severo"
+        },
+        "items": [
+          {
+            "en": "Severe storms",
+            "es": "Tormentas severas"
+          },
+          {
+            "en": "Tornados",
+            "es": "Tornados"
+          },
+          {
+            "en": "Wind",
+            "es": "Viento"
+          },
+          {
+            "en": "Flooding",
+            "es": "Inundaciones"
+          },
+          {
+            "en": "Hail",
+            "es": "Granizo"
+          },
+          {
+            "en": "Extreme heat",
+            "es": "Calor extremo"
+          },
+          {
+            "en": "Freezing temperatures",
+            "es": "Temperaturas bajo cero"
+          },
+          {
+            "en": "Ice storms",
+            "es": "Tormentas de hielo"
+          },
+          {
+            "en": "Snow",
+            "es": "Nieve"
+          },
+          {
+            "en": "Blizzards",
+            "es": "Ventiscas"
+          }
+        ],
+        "icon": "fa-solid fa-cloud-bolt"
+      },
+      {
+        "title": {
+          "en": "Other hazards",
+          "es": "Otros riesgos"
+        },
+        "items": [
+          {
+            "en": "Fires",
+            "es": "Incendios"
+          },
+          {
+            "en": "Earthquakes",
+            "es": "Terremotos"
+          },
+          {
+            "en": "Covid-19",
+            "es": "Covid-19"
+          },
+          {
+            "en": "Flu",
+            "es": "Gripe"
+          },
+          {
+            "en": "Food or water contamination",
+            "es": "Contaminación de alimentos o agua"
+          },
+          {
+            "en": "Electric, water, or gas outages",
+            "es": "Cortes de electricidad, agua o gas"
+          },
+          {
+            "en": "Closed roads or bridges",
+            "es": "Caminos o puentes cerrados"
+          },
+          {
+            "en": "Airplane crashes",
+            "es": "Accidentes aéreos"
+          },
+          {
+            "en": "Train derailments",
+            "es": "Descarrilamientos de trenes"
+          },
+          {
+            "en": "Large interstate accidents",
+            "es": "Grandes accidentes en autopistas interestatales"
+          },
+          {
+            "en": "Terrorism",
+            "es": "Terrorismo"
+          },
+          {
+            "en": "Hazardous chemicals or materials",
+            "es": "Químicos o materiales peligrosos"
+          }
+        ],
+        "icon": "fa-solid fa-virus"
+      }
+    ]
+  },
+  "glossary": {
+    "title": {
+      "en": "Glossary",
+      "es": "Glosario"
+    },
+    "summary": {
+      "en": "Core terms used in the neighborhood emergency preparedness plan.",
+      "es": "Términos clave usados en el plan de preparación vecinal."
+    }
+  }
+}

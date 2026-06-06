@@ -1,0 +1,362 @@
+{
+  "household": {
+    "title": {
+      "en": "Household Preparedness Checklist",
+      "es": "Lista de preparación del hogar"
+    },
+    "items": [
+      {
+        "id": "hh-1",
+        "label": {
+          "en": "Create Ready Kit",
+          "es": "Crear un kit de emergencia"
+        }
+      },
+      {
+        "id": "hh-2",
+        "label": {
+          "en": "Store emergency contacts",
+          "es": "Guardar contactos de emergencia"
+        }
+      },
+      {
+        "id": "hh-3",
+        "label": {
+          "en": "Learn utility shutoffs",
+          "es": "Aprender cómo cerrar los servicios públicos"
+        }
+      },
+      {
+        "id": "hh-4",
+        "label": {
+          "en": "Review family plan",
+          "es": "Revisar el plan familiar"
+        }
+      },
+      {
+        "id": "hh-5",
+        "label": {
+          "en": "Consider CPR/CERT/fire safety training",
+          "es": "Considerar capacitación en RCP, CERT o seguridad contra incendios"
+        }
+      }
+    ]
+  },
+  "readyKit": {
+    "title": {
+      "en": "Household Ready Kit Checklist",
+      "es": "Lista del kit listo"
+    },
+    "items": [
+      {
+        "id": "kit-1",
+        "label": {
+          "en": "Water supply for 3 days: 3 gallons for each person",
+          "es": "Agua para 3 días: 3 galones por persona"
+        }
+      },
+      {
+        "id": "kit-2",
+        "label": {
+          "en": "Food: 3-day supply of non-perishable items",
+          "es": "Comida: suministro de 3 días de alimentos no perecederos"
+        }
+      },
+      {
+        "id": "kit-3",
+        "label": {
+          "en": "Manual can opener",
+          "es": "Abrelatas manual"
+        }
+      },
+      {
+        "id": "kit-4",
+        "label": {
+          "en": "Prescription medications",
+          "es": "Medicamentos recetados"
+        }
+      },
+      {
+        "id": "kit-5",
+        "label": {
+          "en": "Cash and coins",
+          "es": "Dinero en efectivo y monedas"
+        }
+      },
+      {
+        "id": "kit-6",
+        "label": {
+          "en": "FM radio and batteries",
+          "es": "Radio FM y baterías"
+        }
+      },
+      {
+        "id": "kit-7",
+        "label": {
+          "en": "Weather radio and batteries",
+          "es": "Radio meteorológica y baterías"
+        }
+      },
+      {
+        "id": "kit-8",
+        "label": {
+          "en": "Flashlight and batteries",
+          "es": "Linterna y baterías"
+        }
+      },
+      {
+        "id": "kit-9",
+        "label": {
+          "en": "Battery or solar cell phone charger",
+          "es": "Cargador de celular con batería o solar"
+        }
+      },
+      {
+        "id": "kit-10",
+        "label": {
+          "en": "Infant items: diapers, formula, bottles",
+          "es": "Artículos para bebés: pañales, fórmula y biberones"
+        }
+      },
+      {
+        "id": "kit-11",
+        "label": {
+          "en": "Items for elderly neighbors: hearing aid, walker, cane, etc.",
+          "es": "Artículos para personas mayores: audífono, andador, bastón, etc."
+        }
+      },
+      {
+        "id": "kit-12",
+        "label": {
+          "en": "First aid kit",
+          "es": "Botiquín de primeros auxilios"
+        }
+      },
+      {
+        "id": "kit-13",
+        "label": {
+          "en": "Glasses, contacts, solution",
+          "es": "Anteojos, lentes de contacto y solución"
+        }
+      },
+      {
+        "id": "kit-14",
+        "label": {
+          "en": "Copies of important documents: insurance cards, wills, birth certificates, IDs",
+          "es": "Copias de documentos importantes: tarjetas de seguro, testamentos, actas de nacimiento e identificaciones"
+        }
+      },
+      {
+        "id": "kit-15",
+        "label": {
+          "en": "Tools: wrench, pliers, multi-tool",
+          "es": "Herramientas: llave inglesa, pinzas y herramienta multiuso"
+        }
+      },
+      {
+        "id": "kit-16",
+        "label": {
+          "en": "Waterproof matches",
+          "es": "Fósforos impermeables"
+        }
+      },
+      {
+        "id": "kit-17",
+        "label": {
+          "en": "Plates, cups, utensils",
+          "es": "Platos, vasos y utensilios"
+        }
+      },
+      {
+        "id": "kit-18",
+        "label": {
+          "en": "Zip-lock bags and trash bags",
+          "es": "Bolsas con cierre hermético y bolsas de basura"
+        }
+      },
+      {
+        "id": "kit-19",
+        "label": {
+          "en": "Pet items: food, water, carrier/crate",
+          "es": "Artículos para mascotas: comida, agua y transportadora o jaula"
+        }
+      },
+      {
+        "id": "kit-20",
+        "label": {
+          "en": "Chlorine bleach and medicine dropper",
+          "es": "Blanqueador con cloro y gotero medicinal"
+        }
+      },
+      {
+        "id": "kit-21",
+        "label": {
+          "en": "Feminine products",
+          "es": "Productos femeninos"
+        }
+      },
+      {
+        "id": "kit-22",
+        "label": {
+          "en": "Hygiene items: soap, shampoo, toothbrush, toothpaste, deodorant",
+          "es": "Artículos de higiene: jabón, champú, cepillo de dientes, pasta dental y desodorante"
+        }
+      },
+      {
+        "id": "kit-23",
+        "label": {
+          "en": "Paper and pencil/pen",
+          "es": "Papel y lápiz o bolígrafo"
+        }
+      },
+      {
+        "id": "kit-24",
+        "label": {
+          "en": "Emergency reference books",
+          "es": "Libros de referencia para emergencias"
+        }
+      },
+      {
+        "id": "kit-25",
+        "label": {
+          "en": "Children’s items: coloring books, games, puzzles, stuffed animals",
+          "es": "Artículos para niños: libros para colorear, juegos, rompecabezas y peluches"
+        }
+      },
+      {
+        "id": "kit-26",
+        "label": {
+          "en": "Change of clothes/shoes for hot and cold weather",
+          "es": "Cambio de ropa y zapatos para clima cálido y frío"
+        }
+      },
+      {
+        "id": "kit-27",
+        "label": {
+          "en": "Blankets, sleeping bags, pillows",
+          "es": "Mantas, sacos de dormir y almohadas"
+        }
+      }
+    ]
+  },
+  "planSteps": {
+    "title": {
+      "en": "Neighborhood Plan Checklist",
+      "es": "Lista del plan vecinal"
+    },
+    "items": [
+      {
+        "id": "plan-1",
+        "label": {
+          "en": "Obtain or create a neighborhood map with house numbers",
+          "es": "Obtener o crear un mapa del vecindario con números de casas"
+        }
+      },
+      {
+        "id": "plan-2",
+        "label": {
+          "en": "Survey nearby industrial and transportation hazards within 1 to 3 miles",
+          "es": "Revisar riesgos industriales y de transporte cercanos dentro de 1 a 3 millas"
+        }
+      },
+      {
+        "id": "plan-3",
+        "label": {
+          "en": "Discuss likely natural hazards and expected needs",
+          "es": "Hablar sobre riesgos naturales probables y necesidades esperadas"
+        }
+      },
+      {
+        "id": "plan-4",
+        "label": {
+          "en": "Designate a Neighborhood Gathering Site",
+          "es": "Designar un sitio de reunión del vecindario"
+        }
+      },
+      {
+        "id": "plan-5",
+        "label": {
+          "en": "Designate a Neighborhood Care Site",
+          "es": "Designar un sitio de atención del vecindario"
+        }
+      },
+      {
+        "id": "plan-6",
+        "label": {
+          "en": "List neighbors with specialized skills",
+          "es": "Hacer una lista de vecinos con habilidades especializadas"
+        }
+      },
+      {
+        "id": "plan-7",
+        "label": {
+          "en": "List essential equipment and supplies",
+          "es": "Hacer una lista de equipo y suministros esenciales"
+        }
+      },
+      {
+        "id": "plan-8",
+        "label": {
+          "en": "Choose communication methods if cell service fails",
+          "es": "Elegir métodos de comunicación si falla el servicio celular"
+        }
+      },
+      {
+        "id": "plan-9",
+        "label": {
+          "en": "Create OK/HELP window signage",
+          "es": "Crear letreros de ventana OK/AYUDA"
+        }
+      },
+      {
+        "id": "plan-10",
+        "label": {
+          "en": "Create a neighborhood directory",
+          "es": "Crear un directorio del vecindario"
+        }
+      },
+      {
+        "id": "plan-11",
+        "label": {
+          "en": "Set up confidential special-needs sharing",
+          "es": "Establecer una forma confidencial de compartir necesidades especiales"
+        }
+      },
+      {
+        "id": "plan-12",
+        "label": {
+          "en": "Name the Emergency Action Team and backups",
+          "es": "Nombrar el Equipo de Acción de Emergencia y sus suplentes"
+        }
+      },
+      {
+        "id": "plan-13",
+        "label": {
+          "en": "Agree on response steps",
+          "es": "Acordar los pasos de respuesta"
+        }
+      },
+      {
+        "id": "plan-14",
+        "label": {
+          "en": "Ask ONE/KEMA or local experts to review the plan",
+          "es": "Pedir a ONE/KEMA o expertos locales que revisen el plan"
+        }
+      },
+      {
+        "id": "plan-15",
+        "label": {
+          "en": "Bring the written plan back to residents for approval",
+          "es": "Presentar el plan escrito a los residentes para su aprobación"
+        }
+      },
+      {
+        "id": "plan-16",
+        "label": {
+          "en": "Hold drills and review the plan every year",
+          "es": "Realizar simulacros y revisar el plan cada año"
+        }
+      }
+    ]
+  }
+}
