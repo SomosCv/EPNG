@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google" content="notranslate">
+<meta name="theme-color" content="#06142f">
+<title>Somos.CV / Resiliente.CV — Knoxville Emergency Preparedness Mini-App Proposal</title>
+<meta name="description" content="A mobile-friendly, QR-accessible emergency preparedness mini-app pilot proposal for Knoxville based on the Emergency Preparedness Neighborhood Guide.">
+<style>
+:root{
+  --navy-950:#020817;
+  --navy-900:#06142f;
+  --navy-850:#081a3a;
+  --navy-800:#0a234a;
+  --navy-700:#0d3268;
+  --blue:#38bdf8;
+  --blue-2:#60a5fa;
+  --red:#ef233c;
+  --green:#22c55e;
+  --gold:#fbbf24;
+  --white:#f8fafc;
+  --muted:#cbd5e1;
+  --muted-2:#94a3b8;
+  --line:rgba(148,163,184,.28);
+  --card:rgba(8,26,58,.82);
+  --card-2:rgba(10,35,74,.74);
+  --shadow:0 26px 70px rgba(0,0,0,.42);
+  --radius-xl:34px;
+  --radius-lg:24px;
+  --radius-md:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  min-height:100vh;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--white);
+  background:
+    radial-gradient(circle at 18% 0%,rgba(56,189,248,.18),transparent 34%),
+    radial-gradient(circle at 80% 8%,rgba(239,35,60,.11),transparent 30%),
+    linear-gradient(180deg,var(--navy-950),var(--navy-900) 45%,#020617);
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.75),transparent 82%);
+  pointer-events:none;
+  z-index:-1;
+}
+a{color:inherit}
+main{width:100%;padding:28px;display:flex;justify-content:center}
+.page{width:min(1320px,100%)}
+.card-shell{
+  background:linear-gradient(180deg,rgba(8,26,58,.92),rgba(2,8,23,.95));
+  border:1px solid var(--line);
+  border-radius:var(--radius-xl);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.header{
+  padding:34px 34px 26px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:28px;
+  align-items:center;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(2,8,23,.3),rgba(13,50,104,.5),rgba(2,8,23,.3));
+}
+.logo-mark{
+  width:94px;height:94px;border-radius:999px;
+  display:grid;place-items:center;
+  background:radial-gradient(circle at center,rgba(56,189,248,.2),rgba(2,8,23,.6));
+  border:2px solid rgba(248,250,252,.78);
+  position:relative;
+  box-shadow:0 0 32px rgba(56,189,248,.24);
+}
+.logo-mark::before{
+  content:"";width:62px;height:62px;border-radius:999px;border:7px dotted rgba(248,250,252,.9);position:absolute;
+}
+.logo-mark::after{
+  content:"";width:62px;height:10px;background:var(--red);border-radius:999px;position:absolute;box-shadow:0 0 16px rgba(239,35,60,.65);
+}
+.brand h2{font-size:34px;line-height:1;font-weight:800;letter-spacing:-.03em}
+.brand p{font-size:18px;color:var(--red);font-weight:800;margin-top:4px}
+.title-block{text-align:center}
+.title-block h1{font-size:clamp(34px,4vw,58px);line-height:.96;font-weight:800;letter-spacing:-.04em;text-transform:uppercase;text-wrap:balance}
+.title-block .subhead{margin-top:12px;color:var(--blue);font-weight:800;font-size:clamp(17px,2vw,24px)}
+.header-badge{
+  padding:16px 18px;border:1px solid rgba(56,189,248,.42);border-radius:18px;background:rgba(2,8,23,.45);max-width:230px;text-align:center;
+}
+.header-badge i{font-size:30px;color:var(--blue);display:block;margin-bottom:8px}
+.header-badge strong{display:block;font-size:14px;text-transform:uppercase;letter-spacing:.07em}
+.header-badge span{display:block;color:var(--muted);font-size:13px;margin-top:5px}
+.content{padding:28px 34px 34px}
+.notice{
+  display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:flex-start;
+  padding:22px 24px;border:1px solid rgba(56,189,248,.28);border-radius:var(--radius-lg);
+  background:linear-gradient(135deg,rgba(13,50,104,.65),rgba(2,8,23,.42));
+  margin-bottom:22px;
+}
+.notice i{font-size:36px;color:var(--blue);filter:drop-shadow(0 0 16px rgba(56,189,248,.55))}
+.notice p{font-size:20px;line-height:1.45;color:var(--white)}
+.notice p strong{color:var(--blue);font-weight:800}
+.grid{display:grid;gap:22px}
+.grid-3{grid-template-columns:1.2fr .9fr .9fr}
+.grid-2{grid-template-columns:1fr 1fr}
+.panel{
+  background:linear-gradient(180deg,var(--card),rgba(2,8,23,.64));
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:24px;
+  box-shadow:0 18px 44px rgba(0,0,0,.18);
+}
+.panel-title{
+  display:flex;align-items:center;gap:12px;
+  font-size:22px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;margin-bottom:18px;
+}
+.panel-title i{color:var(--blue);font-size:26px}
+.panel p{color:var(--muted);line-height:1.58;font-size:16.5px;margin:10px 0}
+.panel strong{color:var(--white)}
+.price-card{
+  background:linear-gradient(160deg,rgba(13,50,104,.92),rgba(2,8,23,.9));
+  border:1px solid rgba(56,189,248,.35);
+}
+.price{font-size:64px;font-weight:800;letter-spacing:-.05em;margin:8px 0;color:#fff;text-shadow:0 0 28px rgba(56,189,248,.26)}
+.price small{font-size:18px;letter-spacing:0;margin-left:5px;color:var(--muted)}
+.price-note{display:inline-block;margin-top:8px;padding:12px 16px;border-radius:14px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.22);color:var(--white)!important;font-weight:800;text-align:center}
+.check-list{list-style:none;margin-top:14px;display:grid;gap:12px}
+.check-list li{display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:16.5px;line-height:1.45}
+.check-list li i{color:var(--blue);font-size:17px;margin-top:3px;min-width:18px}
+.check-list li strong{color:var(--white)}
+.hero-transform{
+  margin:22px 0;
+  display:grid;grid-template-columns:.65fr auto .9fr 1fr;gap:24px;align-items:center;
+}
+.guide-cover,.phone-mock{
+  border-radius:22px;border:1px solid rgba(148,163,184,.42);background:linear-gradient(180deg,#0c2d5f,#06142f);box-shadow:0 18px 50px rgba(0,0,0,.35);
+}
+.guide-cover{padding:22px;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;background:
+  linear-gradient(rgba(6,20,47,.3),rgba(6,20,47,.9)),
+  radial-gradient(circle at 80% 64%,rgba(251,191,36,.35),transparent 12%),
+  linear-gradient(180deg,#0d3268,#06142f);
+}
+.guide-cover h3{font-size:28px;line-height:1.04;font-weight:800;text-transform:uppercase}.guide-cover p{color:#dbeafe}.guide-cover .city{margin-top:22px;font-size:14px;color:#fff;font-weight:800;border-top:1px solid rgba(255,255,255,.25);padding-top:14px}
+.arrow{font-size:48px;color:#fff;text-align:center}
+.phone-mock{width:245px;margin:auto;border-radius:38px;padding:12px;background:#020617;border:2px solid rgba(248,250,252,.3)}
+.phone-screen{border-radius:28px;overflow:hidden;background:#eef2f7;color:#081a3a;min-height:430px}
+.phone-top{background:linear-gradient(135deg,#06142f,#0d3268);color:white;padding:22px 18px;text-align:center}.phone-top .mini-logo{font-size:13px;color:var(--red);font-weight:800}.phone-top h3{font-size:19px;margin-top:4px}.app-list{padding:12px;display:grid;gap:10px}.app-item{display:flex;align-items:center;gap:10px;padding:12px;border-radius:14px;background:#fff;border:1px solid #dbe3ef;font-weight:800;font-size:14px}.app-item i{width:30px;height:30px;border-radius:999px;display:grid;place-items:center;background:#0d3268;color:white}.app-item:nth-child(1) i{background:#16a34a}.app-item:nth-child(3) i{background:var(--red)}.app-item span{margin-left:auto;color:#334155}.mini-copy h3{font-size:25px;margin-bottom:12px}.mini-copy p{font-size:18px}.metric-card{border-color:rgba(34,197,94,.35);background:linear-gradient(160deg,rgba(4,40,26,.55),rgba(2,8,23,.65))}.target{font-size:62px;font-weight:800;color:#fff;line-height:1;margin:8px 0}.target span{font-size:20px;color:var(--muted);font-weight:800}.target-line{color:var(--blue)!important;font-weight:800}.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:14px}.step{padding:16px;border-radius:18px;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.18)}.step .num{width:32px;height:32px;border-radius:999px;background:var(--blue);color:#021124;font-weight:800;display:grid;place-items:center;margin-bottom:10px}.step strong{display:block;margin-bottom:5px}.step p{font-size:14px;margin:0}.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.support-card{padding:18px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid var(--line)}.support-card h3{font-size:20px;color:var(--blue);margin-bottom:8px}.support-card .support-price{font-size:28px;font-weight:800;color:#fff}.ownership-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.own-item{padding:16px;text-align:center;border-radius:18px;border:1px solid var(--line);background:rgba(2,8,23,.42)}.own-item i{font-size:26px;color:var(--blue);margin-bottom:10px}.own-item strong{display:block;font-size:14px}.own-item p{font-size:13px;margin:5px 0 0}.footer{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.footer div{padding:18px;border-radius:18px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2);font-size:19px;font-weight:800;display:flex;gap:12px;align-items:center}.footer i{color:var(--blue);font-size:26px}.text-size-control{position:fixed;bottom:22px;right:22px;z-index:20;width:46px;height:46px;border-radius:999px;background:rgba(56,189,248,.18);border:1px solid rgba(56,189,248,.36);color:white;display:grid;place-items:center;box-shadow:0 16px 40px rgba(0,0,0,.35);cursor:pointer}.large-text{font-size:1.13rem}.large-text p,.large-text li{font-size:1.1em!important}.small-note{color:var(--muted-2)!important;font-size:14px!important}.divider{height:1px;background:var(--line);margin:22px 0}.cta-bar{margin-top:22px;padding:22px 24px;border-radius:22px;background:linear-gradient(90deg,rgba(239,35,60,.16),rgba(56,189,248,.12));border:1px solid rgba(255,255,255,.15);font-size:23px;font-weight:800;text-align:center}.cta-bar span{color:var(--blue)}
+
+/* ===== STANDALONE ICON FALLBACKS =====
+   This file does not depend on Font Awesome or external fonts.
+   The <i> elements below are rendered with Unicode symbols. */
+.fa-solid,.fa-regular{font-style:normal;font-family:system-ui,-apple-system,"Segoe UI Symbol","Apple Color Emoji","Segoe UI Emoji",sans-serif;line-height:1;display:inline-block;text-rendering:auto}
+.fa-shield-check::before{content:"✓"}
+.fa-tag::before{content:"🏷"}
+.fa-bullseye::before{content:"◎"}
+.fa-globe::before{content:"◎"}
+.fa-arrows-rotate::before{content:"↻"}
+.fa-arrow-right::before{content:"→"}
+.fa-house::before{content:"⌂"}
+.fa-people-group::before{content:"👥"}
+.fa-person-running::before{content:"↯"}
+.fa-phone::before{content:"☎"}
+.fa-book-open::before{content:"▤"}
+.fa-check-circle::before,.fa-circle-check::before{content:"✓"}
+.fa-check::before{content:"✓"}
+.fa-xmark::before{content:"×"}
+.fa-list-check::before{content:"☑"}
+.fa-user-shield::before{content:"◈"}
+.fa-calendar-check::before{content:"◷"}
+.fa-key::before{content:"⚿"}
+.fa-server::before{content:"▦"}
+.fa-chart-simple::before{content:"▥"}
+.fa-qrcode::before{content:"▦"}
+.fa-folder-open::before{content:"▱"}
+.fa-screwdriver-wrench::before{content:"⚙"}
+.fa-file-circle-check::before{content:"◉"}
+.fa-mobile-screen-button::before{content:"▯"}
+.fa-landmark::before{content:"▰"}
+.fa-heart::before{content:"♥"}
+.fa-text-height::before{content:"A"}
+
+@media(max-width:1100px){.header{grid-template-columns:1fr;text-align:center}.brand{display:flex;align-items:center;justify-content:center;gap:16px}.header-badge{margin:auto}.grid-3,.grid-2{grid-template-columns:1fr}.hero-transform{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.timeline,.ownership-row{grid-template-columns:1fr 1fr}.phone-mock{width:min(280px,100%)}}
+@media(max-width:640px){main{padding:12px}.content,.header{padding:20px}.brand{flex-direction:column}.logo-mark{width:78px;height:78px}.title-block h1{font-size:31px}.notice{grid-template-columns:1fr}.price{font-size:48px}.timeline,.ownership-row,.support-grid,.footer{grid-template-columns:1fr}.guide-cover{min-height:260px}.panel{padding:18px}.panel-title{font-size:19px}.cta-bar{font-size:19px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="page">
+    <div class="card-shell" id="mainCard">
+      <header class="header">
+        <div class="brand">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div>
+            <h2>Somos.CV</h2>
+            <p>Resiliente.CV</p>
+          </div>
+        </div>
+        <div class="title-block">
+          <h1>Knoxville Emergency Preparedness Mini-App</h1>
+          <div class="subhead">Mobile-Friendly · QR Accessible · Offline-Ready Concept · Ready for Knoxville Review</div>
+        </div>
+        <div class="header-badge">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <strong>No app store needed</strong>
+          <span>Residents open it from a link or QR code.</span>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="notice">
+          <i class="fa-solid fa-shield-check"></i>
+          <p>This is a working proof-of-concept mini-app inspired by Knoxville's <strong>Emergency Preparedness Neighborhood Guide</strong>. It takes important public preparedness information and makes it easier for residents and neighborhood groups to access on a phone. If Knoxville finds the concept useful, the next step is a small 60-day pilot using one QR code, one placement location, one primary success metric, and no collection of personal data.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="panel price-card">
+            <div class="panel-title"><i class="fa-solid fa-tag"></i> Project Investment</div>
+            <div class="price">$3,000 <small>USD</small></div>
+            <p class="price-note">One-time payment. Everything included. No recurring monthly fees.</p>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-check"></i> <span><strong>Domain and hosting</strong> are included for the pilot.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span><strong>Mini-app customization</strong> and preparedness content integration are included.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span><strong>Accessibility configuration and testing</strong> are included before launch.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span><strong>QR code setup, analytics setup, deployment, launch support, and handoff documentation</strong> are included.</span></li>
+            </ul>
+          </article>
+
+          <article class="panel metric-card">
+            <div class="panel-title"><i class="fa-solid fa-bullseye"></i> Success Defined</div>
+            <p>The pilot's success will be defined by a specific number of QR code scans during the 60-day pilot period.</p>
+            <div class="target">300 <span>QR code scans</span></div>
+            <p class="target-line">Target: 300 scans in 60 days.</p>
+            <p>All other information, including page visits, most-viewed sections, return visits, and usage trends, will be treated as bonus metrics.</p>
+          </article>
+
+          <article class="panel">
+            <div class="panel-title"><i class="fa-solid fa-globe"></i> Suggested Domain</div>
+            <p>The pilot can use a simple public destination such as <strong>knoxvilleemergency.app</strong>, or another City-approved domain.</p>
+            <p>The domain should be registered in Knoxville's name and included in the final ownership handoff.</p>
+          </article>
+        </div>
+
+        <section class="panel" style="margin-top:22px;">
+          <div class="panel-title"><i class="fa-solid fa-arrows-rotate"></i> From Static Guide to Mini-App</div>
+          <div class="hero-transform">
+            <div class="guide-cover">
+              <div>
+                <h3>Emergency Preparedness Neighborhood Guide</h3>
+                <p>A guide for Knoxville neighborhoods.</p>
+              </div>
+              <div class="city"><i class="fa-solid fa-landmark"></i> City of Knoxville</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="phone-mock">
+              <div class="phone-screen">
+                <div class="phone-top">
+                  <div class="mini-logo">KNOXVILLE</div>
+                  <h3>Be Prepared</h3>
+                </div>
+                <div class="app-list">
+                  <div class="app-item"><i class="fa-solid fa-house"></i> Household Ready Kit <span>›</span></div>
+                  <div class="app-item"><i class="fa-solid fa-people-group"></i> Neighborhood Plan <span>›</span></div>
+                  <div class="app-item"><i class="fa-solid fa-person-running"></i> Emergency Steps <span>›</span></div>
+                  <div class="app-item"><i class="fa-solid fa-phone"></i> Phone Numbers <span>›</span></div>
+                  <div class="app-item"><i class="fa-solid fa-book-open"></i> Resources <span>›</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mini-copy">
+              <h3>A phone-friendly version of the guide.</h3>
+              <p>The mini-app gives residents a simpler way to read, navigate, and revisit preparedness information on any phone.</p>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-check-circle"></i> <span><strong>Mobile-friendly:</strong> Designed for quick use on phones.</span></li>
+                <li><i class="fa-solid fa-check-circle"></i> <span><strong>Simple navigation:</strong> Key information is organized into easy sections.</span></li>
+                <li><i class="fa-solid fa-check-circle"></i> <span><strong>Offline-ready concept:</strong> Important content can remain available in limited-connectivity situations.</span></li>
+                <li><i class="fa-solid fa-check-circle"></i> <span><strong>Quick access:</strong> Residents can open it instantly without using an app store.</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="grid grid-2" style="margin-top:22px;">
+          <article class="panel">
+            <div class="panel-title"><i class="fa-solid fa-list-check"></i> What Knoxville Receives</div>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-check"></i> <span>A mobile-friendly emergency preparedness mini-app based on the guide.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Preparedness content organized into sections such as household readiness, ready kit, neighborhood plan, emergency steps, phone numbers, and resources.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>A dedicated pilot domain and hosting setup.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>A QR code system for pilot access and scan measurement.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Simple analytics focused on QR scans, plus bonus usage information.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Launch support, pilot support, and operational handoff documentation.</span></li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <div class="panel-title"><i class="fa-solid fa-user-shield"></i> Privacy Boundaries</div>
+            <p>The pilot is designed to measure public interest without collecting personal information from residents.</p>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-xmark"></i> <span>No names are collected.</span></li>
+              <li><i class="fa-solid fa-xmark"></i> <span>No phone numbers or email addresses are collected.</span></li>
+              <li><i class="fa-solid fa-xmark"></i> <span>No medical, household, demographic, or resident records are collected.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>The primary measurable action is whether people scan the QR code and open the mini-app.</span></li>
+            </ul>
+          </article>
+        </div>
+
+        <section class="panel" style="margin-top:22px;">
+          <div class="panel-title"><i class="fa-regular fa-calendar-check"></i> How Long It Takes</div>
+          <div class="timeline">
+            <div class="step"><div class="num">1</div><strong>Review & Feedback</strong><p>Knoxville reviews the demo and provides feedback.</p></div>
+            <div class="step"><div class="num">2</div><strong>Pilot Setup</strong><p>We prepare the pilot version, domain, access, and tracking.</p></div>
+            <div class="step"><div class="num">3</div><strong>Pilot Launch</strong><p>The mini-app and QR code go live for one approved location or outreach setting.</p></div>
+            <div class="step"><div class="num">4</div><strong>Review & Report</strong><p>We provide a simple report showing scan count and bonus metrics.</p></div>
+            <div class="step"><div class="num">5</div><strong>Decision Point</strong><p>Together, we decide whether a larger rollout makes sense.</p></div>
+          </div>
+          <div class="divider"></div>
+          <p><strong>Estimated setup time:</strong> 7–10 business days after the pilot scope is approved.</p>
+          <p><strong>Pilot duration:</strong> 60 days from launch.</p>
+        </section>
+
+        <section class="panel" style="margin-top:22px;">
+          <div class="panel-title"><i class="fa-solid fa-key"></i> Ownership & Business Control — Knoxville Owns Everything</div>
+          <div class="ownership-row">
+            <div class="own-item"><i class="fa-solid fa-globe"></i><strong>Domain Ownership</strong><p>Knoxville owns the domain and renewals.</p></div>
+            <div class="own-item"><i class="fa-solid fa-server"></i><strong>Hosting Ownership</strong><p>Knoxville owns the hosting account.</p></div>
+            <div class="own-item"><i class="fa-solid fa-chart-simple"></i><strong>Analytics Ownership</strong><p>Knoxville owns the data and reports.</p></div>
+            <div class="own-item"><i class="fa-solid fa-qrcode"></i><strong>QR Code Ownership</strong><p>Knoxville owns the QR destination and can reuse it.</p></div>
+            <div class="own-item"><i class="fa-solid fa-folder-open"></i><strong>Full Handoff</strong><p>All credentials and documentation are provided.</p></div>
+          </div>
+        </section>
+
+        <div class="grid grid-2" style="margin-top:22px;">
+          <article class="panel">
+            <div class="panel-title"><i class="fa-solid fa-screwdriver-wrench"></i> Ongoing Help Is Optional</div>
+            <div class="support-grid">
+              <div class="support-card">
+                <h3>Pay-as-you-go</h3>
+                <div class="support-price">$75 / hour</div>
+                <p>Billed in 15-minute increments for small updates, design changes, new pages, and support requests.</p>
+                <p>Support requests are answered within one business day.</p>
+              </div>
+              <div class="support-card">
+                <h3>Yearly Retainer</h3>
+                <div class="support-price">$400 / year</div>
+                <p>Includes up to 6 hours of support per year, email help, and a yearly check.</p>
+                <p>Unused hours do not roll over.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-title"><i class="fa-solid fa-file-circle-check"></i> Final Deliverable</div>
+            <p>At the end of the setup process, Knoxville receives a working mini-app, pilot domain, QR code system, analytics setup, launch support, and documentation.</p>
+            <p>At the end of the 60-day pilot, Knoxville receives a simple report that clearly states whether the 300-scan goal was reached and what bonus usage patterns were observed.</p>
+          </article>
+        </div>
+
+        <div class="cta-bar">
+          Everything delivered. <span>Knoxville owns the mini-app, content, QR code, domain, hosting, analytics, and documentation.</span>
+        </div>
+
+        <div class="footer">
+          <div><i class="fa-solid fa-circle-check"></i> Simple. Useful. Ready for Knoxville.</div>
+          <div><i class="fa-solid fa-heart"></i> Built to make preparedness information easier to reach.</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<button class="text-size-control" id="textSizeToggle" type="button" aria-label="Toggle larger text" title="Toggle larger text"><i class="fa-solid fa-text-height"></i></button>
+<script>
+(function(){
+  const btn = document.getElementById('textSizeToggle');
+  const key = 'knoxvilleProposalLargeText';
+  if(localStorage.getItem(key) === 'true') document.body.classList.add('large-text');
+  btn && btn.addEventListener('click', function(){
+    document.body.classList.toggle('large-text');
+    localStorage.setItem(key, document.body.classList.contains('large-text'));
+  });
+})();
+</script>
+</body>
+</html>
